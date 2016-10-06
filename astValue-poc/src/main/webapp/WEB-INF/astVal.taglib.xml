@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<facelet-taglib version="2.2"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facelettaglibrary_2_2.xsd">
+	<namespace>http://www.xxx.co.th/facelets</namespace>
+	<tag>
+		<tag-name>dynamicColumns</tag-name>
+		<source>tags/dynamicColumns.xhtml</source>
+		<attribute>
+			<description>Data table items</description>
+			<name>itemBean</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<description>An el expression refering to a server side MBean object
+					which extends the AbstractDynamicPageMBean.</description>
+			<name>mbean</name>
+			<type>core.web.common.AbstractDynamicPageMBean</type>
+		</attribute>
+		<attribute>
+			<name>columnModel</name>
+		</attribute>
+	</tag>
+	<tag>
+		<tag-name>dynamicColumn</tag-name>
+		<source>tags/dynamicColumn.xhtml</source>
+		<attribute>
+			<description>Data table items</description>
+			<name>itemBean</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<required>true</required>
+			<name>columnModel</name>
+		</attribute>
+	</tag>
+</facelet-taglib>
